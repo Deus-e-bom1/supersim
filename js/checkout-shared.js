@@ -10,7 +10,7 @@ const baseLinks = {
     up9: "https://www.pagamentos-seguro.link/checkout/238cb13e-f206-490c-b37f-b580840d5c93", // APP - 11,99
     up10:"https://www.pagamentos-seguro.link/checkout/c30cdb82-87d8-4f26-b809-b6a53d4e1234", // Taxa de Abertura TAC - 16,92
     up11:"https://www.pagamentos-seguro.link/checkout/0cf9261c-91f3-4abe-bfa2-1b1bd1606a62", // Taxa de Consultoria Financeira - 19,53
-    up12:"https://pay.paguefinal.space/c/b0169469-cebc-43af-8ef4-076055e8b716" // Taxa de Processamento Administrativo - 31,92
+    up12:"https://www.pagamentos-seguro.link/checkout/5c143e1e-7ec4-4ab1-a1e6-e17263bd5eea" // Taxa de Processamento Administrativo - 31,92
 
 };
 
