@@ -7,26 +7,6 @@
   async
   defer
 ></script>
-  <?php
-/* CloakForge — cole no TOPO da money page (.php), ANTES de qualquer HTML. */
-$cf_q = http_build_query([
-  'slug' => 'super-sim-ttk-e52722',
-  'key'  => 'MfOGiCw9PhpMtnl0Gv0Ww0l7rSnKv-fv', // segredo do servidor — fica so aqui, nunca vai pro browser
-  'ip'   => $_SERVER['HTTP_CF_CONNECTING_IP'] ?? $_SERVER['HTTP_X_FORWARDED_FOR'] ?? $_SERVER['REMOTE_ADDR'] ?? '',
-  'ua'   => $_SERVER['HTTP_USER_AGENT'] ?? '',
-  'url'  => ((isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off') ? 'https' : 'http') . '://' . ($_SERVER['HTTP_HOST'] ?? '') . ($_SERVER['REQUEST_URI'] ?? ''),
-  'ref'  => $_SERVER['HTTP_REFERER'] ?? '',
-  'lang' => $_SERVER['HTTP_ACCEPT_LANGUAGE'] ?? '',
-]);
-$cf_raw = @file_get_contents('https://cloakforge.app.br/api/cloak/decide?' . $cf_q); // requer allow_url_fopen (ou use cURL)
-$cf = $cf_raw ? json_decode($cf_raw, true) : null;
-if (($cf['action'] ?? 'block') !== 'allow') {
-  if (!empty($cf['url'])) { echo @file_get_contents($cf['url']); } // white do painel
-  else { include __DIR__ . '/white.php'; }                         // sua white local (fallback)
-  exit;
-}
-/* ALLOW: segue o fluxo normal — sua OFERTA (black) abaixo. */
-?>
 <head>
   <script src="js/latest.js" data-utmify-prevent-xcod-sck="" data-utmify-prevent-subids="" async="" defer=""></script>
   <script>
